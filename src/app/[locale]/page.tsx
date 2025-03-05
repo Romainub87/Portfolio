@@ -12,6 +12,7 @@ import Contact from '@/components/Contact';
 import Cookies from 'js-cookie';
 import { useScopedI18n } from "@/locales/client";
 import { LocaleSelect } from "@/app/[locale]/localeSelect";
+import { redirect } from 'next/navigation';
 
 export default function Home() {
   const t = useScopedI18n('header');
@@ -69,6 +70,13 @@ export default function Home() {
       document.documentElement.classList.remove('dark');
     }
   }, [isDarkMode]);
+
+  useEffect(() => {
+    const validPaths = ['/en', '/fr'];
+    if (!validPaths.includes(window.location.pathname)) {
+      redirect('/fr');
+    }
+  }, []);
 
   return (
       <div className={`min-h-screen p-4 md:px-20 md:pb-0 md:pt-14 ${isDarkMode ? 'bg-gray-900 text-gray-200' : 'bg-gray-200 text-gray-900'} overflow-x-hidden transition-colors duration-500 ease-in-out`}>

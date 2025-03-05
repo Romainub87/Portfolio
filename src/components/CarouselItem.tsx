@@ -55,7 +55,7 @@ const CarouselItem: React.FC<CarouselItemProps> = ({ image, index, currentIndex 
                     </a>
                 )}
             </h3>
-            <p className="text-gray-500 dark:text-gray-400 mt-2 w-5/6 md:w-full max-w-lg text-justify overflow-hidden text-overflow-ellipsis whitespace-normal word-wrap-break-word">
+            <p className="text-gray-500 dark:text-gray-400 mt-2 w-1/2 md:w-full max-w-lg text-justify overflow-hidden text-overflow-ellipsis whitespace-normal word-wrap-break-word">
                 <strong>{image.title}</strong>{image.description}
             </p>
         </div>

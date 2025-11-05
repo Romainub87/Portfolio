@@ -46,7 +46,7 @@ const CarouselItem: React.FC<CarouselItemProps> = ({ image, index, currentIndex 
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
         >
-            <Image src={image.src} alt={image.alt} className="rounded-lg w-5/6 bg-gray-900 dark:bg-transparent md:w-full h-auto max-w-md" />
+            <Image src={image.src} alt={image.alt} className="rounded-lg w-5/6 max-h-60 bg-gray-900 dark:bg-transparent md:w-full h-auto max-w-md" />
             <h3 className="text-2xl font-bold mt-4 text-center sm:text-left w-max">
                 {image.title}
                 {image.link && (

@@ -6,6 +6,7 @@ import petanqueImage from '@/assets/petanque.jpg';
 import worldImage from '@/assets/world.jpg';
 import triFavoriteImage from '@/assets/tri-fav.png';
 import woodeoImage from '@/assets/woodeo.png';
+import yamImage from '@/assets/yam.jpg';
 import { useScopedI18n } from '@/locales/client';
 
 export default function Carousel() {
@@ -14,10 +15,11 @@ export default function Carousel() {
     const carouselRef = useRef<HTMLDivElement>(null);
 
     const projects = [
-        { src: petanqueImage, alt: 'Petanquaton', title: t('0.title'), description: t('0.description') },
+        { src: petanqueImage, alt: 'Petanquaton', title: t('0.title'), link: t('0.link'), description: t('0.description') },
         { src: worldImage, alt: 'Countries API WebApp', title: t('1.title'), link: 'https://' + t('1.link'), description: t('1.description') },
         { src: triFavoriteImage, alt: 'Extended Tri de favoris', title: t('2.title'), description: t('2.description') },
         { src: woodeoImage, alt: 'Woodeo', title: t('3.title'), link: 'https://' + t('3.link'), description: t('3.description') },
+        { src: yamImage, alt: 'Yam Master', title: t('4.title'), link: 'https://' + t('4.link'), description: t('4.description') },
     ];
 
     const handlePrev = () => {

@@ -12,7 +12,8 @@ export default {
     projects: [
         {
             title: 'Pétanquaton',
-            description: ' is an Android mobile application developed in Kotlin, designed for pétanque enthusiasts. It allows you to track game scores in real-time between multiple players and organize and manage tournaments involving many participants.',
+            link: 'game.petanquaton.online',
+            description: ' is a web application developed in React Native, designed for pétanque enthusiasts. It allows you to organize and manage tournaments involving many participants.',
         },
         {
             title: 'Countries API WebApp',
@@ -31,6 +32,12 @@ export default {
             description: ' is a web app that allows series enthusiasts to track their favorite shows, ' +
                 'discover new ones, and share their opinions with a community. ' +
                 'The intuitive interface and extensive catalog make it an essential tool for all series lovers.'
+        },
+        {
+            title: 'Yam Master',
+            link: 'yam-master.fr',
+            description: ' is an online Yam (similar to Yahtzee) game hosted at yam-master.fr. It lets players roll dice, build combinations, and track scores. ' +
+                'Features include single-player mode, online multiplayer rooms, responsive UI, and score history. '
         },
     ],
     contact: {

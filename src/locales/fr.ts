@@ -8,12 +8,13 @@ export default {
     },
     about: {
         'title': 'À propos de moi',
-        'content': 'Je suis un développeur web de 21 ans passionné par la création d\'applications modernes et performantes. Je maîtrise {phpIcon} et JavaScript {jsIcon} / TypeScript, ainsi que des frameworks comme Symfony {symfonyIcon}, Angular {angularIcon} et jQuery. Actuellement en apprentissage chez {sullyGroupLink} et en première année de master, je combine théorie et pratique pour concevoir des solutions robustes et sur mesure. Toujours curieux et motivé, je suis prêt à relever de nouveaux défis pour transformer vos idées en projets concrets.'
+        'content': 'Je suis un développeur web de 21 ans passionné par la création d\'applications modernes et performantes. Je maîtrise {phpIcon} et JavaScript {jsIcon} / TypeScript, ainsi que des frameworks comme Symfony {symfonyIcon}, Angular {angularIcon} et jQuery. Actuellement en apprentissage chez {sullyGroupLink} et en dernière année de master, je combine théorie et pratique pour concevoir des solutions robustes et sur mesure. Toujours curieux et motivé, je suis prêt à relever de nouveaux défis pour transformer vos idées en projets concrets.'
     },
     projects: [
         {
             title: 'Pétanquaton',
-            description: ' est une application mobile Android développée en Kotlin, conçue pour les passionnés de pétanque. Elle permet de suivre les scores des parties en temps réel entre plusieurs joueurs et d\'organiser et gérer des tournois impliquant de nombreux participants.',
+            link: 'game.petanquaton.online',
+            description: ' est une webapp développée en React Native conçue pour les passionnés de pétanque. Elle permet d\'organiser et gérer des tournois impliquant de nombreux participants.',
         },
         {
             title: 'Countries API WebApp',
@@ -32,6 +33,12 @@ export default {
             description: ' est une application web qui permet aux passionnés de séries de suivre leurs émissions préférées, ' +
                 'découvrir de nouvelles séries et partager leurs opinions avec une communauté. ' +
                 'L\'interface intuitive et le catalogue étendu en font un outil indispensable pour tous les amateurs de séries.'
+        },
+        {
+            title: 'Yam Master',
+            link: 'yam-master.fr',
+            description: ' est un jeu de Yam (similaire au Yahtzee) en ligne hébergé sur yam-master.fr. Il permet aux joueurs de lancer des dés, constituer des combinaisons et suivre les scores. ' +
+                'Fonctionnalités : mode solo, salles multijoueurs en ligne, interface responsive et historique des parties.'
         },
     ],
     contact: {
